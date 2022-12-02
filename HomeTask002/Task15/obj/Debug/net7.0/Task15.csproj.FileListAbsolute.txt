@@ -1,0 +1,15 @@
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/bin/Debug/net7.0/Task15
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/bin/Debug/net7.0/Task15.deps.json
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/bin/Debug/net7.0/Task15.runtimeconfig.json
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/bin/Debug/net7.0/Task15.dll
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/bin/Debug/net7.0/Task15.pdb
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.csproj.AssemblyReference.cache
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.GeneratedMSBuildEditorConfig.editorconfig
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.AssemblyInfoInputs.cache
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.AssemblyInfo.cs
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.csproj.CoreCompileInputs.cache
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.dll
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/refint/Task15.dll
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.pdb
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/Task15.genruntimeconfig.cache
+/home/timurg/Документы/GeekBrains/C# Projects/HomeTask002/Task15/obj/Debug/net7.0/ref/Task15.dll
