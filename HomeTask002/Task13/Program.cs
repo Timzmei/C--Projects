@@ -29,7 +29,7 @@ int GetThirdDitgit(int number) {
 int ReadNumber(string text) {
     Console.WriteLine(text);
     int number;
-    string readNumber = Console.ReadLine();
+    string readNumber = Console.ReadLine() ?? "Nullable";
     if (int.TryParse(readNumber, out number)) {} 
     else {
         Console.WriteLine("Ввод некорректный. Вводите только цифры");

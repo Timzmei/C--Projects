@@ -13,7 +13,7 @@ CheckNumber(number);
 int ReadNumber(string text) {
     Console.WriteLine(text);
     int number;
-    string readNumber = Console.ReadLine();
+    string readNumber = Console.ReadLine() ?? "Nullable";
     if (int.TryParse(readNumber, out number)) {} 
     else {
         Console.WriteLine("Введена какая-то фигня. Попытайтесь еще раз. Аккуратнее давите клаву");

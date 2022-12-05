@@ -17,7 +17,7 @@ if(number == 7 || number == 6) {
 int ReadNumber(string text) {
     Console.WriteLine(text);
     int number;
-    string readNumber = Console.ReadLine();
+    string readNumber = Console.ReadLine() ?? "Nullable";
     if (int.TryParse(readNumber, out number)) {
         if (number < 1 || number > 7) {
             Console.WriteLine("Ввод некорректный. Вводите цифру от 1 до 7");
