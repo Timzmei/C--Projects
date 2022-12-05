@@ -1,4 +1,5 @@
-﻿// 11. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
+﻿using System;
+// 11. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
 // 456 -> 46 782 -> 72 918 -> 98
 
 Random random = new Random();
@@ -51,7 +52,7 @@ if(oneNumber * oneNumber == twoNumber) { //если остаток равен 0,
 int ReadNumber(string text) {
     Console.WriteLine(text);
     int number;
-    string readNumber = Console.ReadLine();
+    string readNumber = Console.ReadLine() ?? "Nullable";
     if (int.TryParse(readNumber, out number)) {}
     else {
         Console.WriteLine("Ввод некорректный. Вводите только цифры");

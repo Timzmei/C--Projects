@@ -58,6 +58,7 @@ public class TaskRefOut
             rslt = int.Parse(s);
             return true;
         } catch (Exception e) {
+            Console.WriteLine(e.Message);
             rslt = 0;
             return false;
         }
@@ -67,6 +68,7 @@ public class TaskRefOut
             res = Math.Abs(i).ToString().Select(t=>int.Parse(t.ToString())).ToArray();
             return true;
         } catch (Exception e) {
+            Console.WriteLine(e.Message);
             res = new int[0];
             return false;
         }
