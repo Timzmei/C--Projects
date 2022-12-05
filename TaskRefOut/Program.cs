@@ -18,11 +18,7 @@ public class TaskRefOut
     {
 
         // Задача №1
-        void Changer (ref int i, ref int j) {
-            int temp = i;
-            i = j;
-            j = temp;
-        }
+
         int oneParametr = 1;
         int twoParametr = 2;
         Console.WriteLine("Значения до передачи в метод Changer: oneParametr=" + oneParametr + "; twoParametr=" + twoParametr);
@@ -31,30 +27,14 @@ public class TaskRefOut
 
 
         //Задача №2
-        bool ParityCheck (int i, out string result) {
-            if (i % 2 == 0){
-                result = (i / 2).ToString();
-                return true; 
-            } else {
-                result = "\"не делится\"";
-                return false;
-            }
-        }
+
         string result = "не делится";
         Console.WriteLine("2 четное число? " + ParityCheck(2, out result) + " Результат деления на 2 равен " + result);
         Console.WriteLine("5 четное число? " + ParityCheck(5, out result) + " Результат деления на 2 равен " + result);
 
         //Задача №3
 
-        bool IntToArray (int i, out int[] res) {
-            try {
-                res = Math.Abs(i).ToString().Select(t=>int.Parse(t.ToString())).ToArray();
-                return true;
-            } catch (Exception e) {
-                res = new int[0];
-                return false;
-            }
-        }
+
 
         int[] res;
         Console.WriteLine(IntToArray(125634, out res) + " Результат: " + res[0]);
@@ -82,7 +62,32 @@ public class TaskRefOut
             return false;
         }
     }
+    public static bool IntToArray (int i, out int[] res) {
+        try {
+            res = Math.Abs(i).ToString().Select(t=>int.Parse(t.ToString())).ToArray();
+            return true;
+        } catch (Exception e) {
+            res = new int[0];
+            return false;
+        }
+    }
 
+
+    public static bool ParityCheck (int i, out string result) {
+        if (i % 2 == 0){
+            result = (i / 2).ToString();
+            return true; 
+        } else {
+            result = "\"не делится\"";
+            return false;
+        }
+    }
+
+    public static void Changer (ref int i, ref int j) {
+        int temp = i;
+        i = j;
+        j = temp;
+    }
 }
 
 
