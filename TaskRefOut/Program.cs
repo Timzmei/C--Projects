@@ -11,6 +11,8 @@
      и пытается преобразовать в число, если получилось то возвращается true, если нет то false
 */
 
+namespace TaskRefOut;
+
 public class TaskRefOut
 {
     public void Main()
