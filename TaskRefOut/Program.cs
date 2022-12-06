@@ -11,10 +11,9 @@
      и пытается преобразовать в число, если получилось то возвращается true, если нет то false
 */
 
-using System;
 public class TaskRefOut
 {
-    public static void Main()
+    public void Main()
     {
 
         int number;
@@ -53,7 +52,7 @@ public class TaskRefOut
 
 
     //Задача №1
-    public static void TaskOne () {
+    public void TaskOne () {
         int oneParametr = 1;
         int twoParametr = 2;
         Console.WriteLine("Значения до передачи в метод Changer: oneParametr=" + oneParametr + "; twoParametr=" + twoParametr);
@@ -63,7 +62,7 @@ public class TaskRefOut
     
     
     //Задача №2
-    public static void TaskTwo () {
+    public void TaskTwo () {
         string result = "не делится";
         Console.WriteLine("2 четное число? " + ParityCheck(2, out result) + " Результат деления на 2 равен " + result);
         Console.WriteLine("5 четное число? " + ParityCheck(5, out result) + " Результат деления на 2 равен " + result);
@@ -72,7 +71,7 @@ public class TaskRefOut
 
     
     //Задача №3
-    public static void TaskThree () {
+    public void TaskThree () {
         int[] res;
         Console.WriteLine(IntToArray(125634, out res) + " Результат: " + res[0]);
         Console.WriteLine(IntToArray(0, out res) + " Результат: " + res[0]);
@@ -81,7 +80,7 @@ public class TaskRefOut
     }
 
     // Задача №4
-    public static void TaskFour () {
+    public void TaskFour () {
         int num;
         Console.WriteLine(MyTryParse("1234567890", out num) + " Результат: " + num);
         Console.WriteLine(MyTryParse("0", out num) + " Результат: " + num);
@@ -89,7 +88,7 @@ public class TaskRefOut
         Console.WriteLine(MyTryParse("-5826", out num) + " Результат: " + num);
         Console.WriteLine(MyTryParse("ouwrhvwre45375367", out num) + " Результат: " + num); 
     }
-    public static bool MyTryParse (string s, out int rslt) {
+    public bool MyTryParse (string s, out int rslt) {
         try {
             rslt = int.Parse(s);
             return true;
@@ -99,7 +98,7 @@ public class TaskRefOut
             return false;
         }
     }
-    public static bool IntToArray (int i, out int[] res) {
+    public bool IntToArray (int i, out int[] res) {
         try {
             res = Math.Abs(i).ToString().Select(t=>int.Parse(t.ToString())).ToArray();
             return true;
@@ -111,7 +110,7 @@ public class TaskRefOut
     }
 
 
-    public static bool ParityCheck (int i, out string result) {
+    public bool ParityCheck (int i, out string result) {
         if (i % 2 == 0){
             result = (i / 2).ToString();
             return true; 
@@ -121,13 +120,13 @@ public class TaskRefOut
         }
     }
 
-    public static void Changer (ref int i, ref int j) {
+    public void Changer (ref int i, ref int j) {
         int temp = i;
         i = j;
         j = temp;
     }
 
-    public static int ReadNumber(string text) {
+    public int ReadNumber(string text) {
     Console.WriteLine(text);
     int number;
     string readNumber = Console.ReadLine() ?? "Nullable";
