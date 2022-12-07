@@ -31,16 +31,12 @@ int[] GetArray(int number) {
 }
 
 bool CheckPolyndrom(int[] array) {
-    bool flag = true;
-
     for (int i = 0; i < array.Length / 2; i++) {
         if(array[i] != array[array.Length - 1 - i]) {
-            flag = false;
+            return false;
         }
-
     }
-
-    return flag;
+    return true;
 }
 
 int ReadNumber(string text) {
