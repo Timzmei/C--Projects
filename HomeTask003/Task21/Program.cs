@@ -20,14 +20,9 @@ int[] ReadCoordinate(string text) {
     Console.WriteLine(text);
     int[] number = new int[3];
 
-    int x = ReadNumber("Введите координату x");
-    int y = ReadNumber("Введите координату y");
-    int z = ReadNumber("Введите координату z");
-
-    number[0] = x;
-    number[1] = y;
-    number[2] = z;
-
+    number[0] = ReadNumber("Введите координату x");
+    number[1] = ReadNumber("Введите координату y");
+    number[2] = ReadNumber("Введите координату z");
 
     return number;
 }
@@ -49,11 +44,7 @@ double GetLength(int[] a, int[] b) {
     int lengthY = Math.Abs(a[1] - b[1]);
     int lengthZ = Math.Abs(a[2] - b[2]);
 
-
-    double lengthXY = Math.Sqrt(lengthX * lengthX + lengthY * lengthY);
-    double lengthXYZ = Math.Sqrt(lengthXY * lengthXY + lengthZ * lengthZ);
-
-    return Math.Abs(lengthXYZ);
+    return Math.Sqrt(lengthX * lengthX + lengthY * lengthY + lengthZ * lengthZ);
 }
 
 void TestGetLength() {
