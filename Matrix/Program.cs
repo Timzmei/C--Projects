@@ -9,6 +9,10 @@ Console.WriteLine($"columnLengt = {matrixNew.GetLength(0)}");
 Console.WriteLine($"rowLength = {matrixNew.GetLength(1)}");
 int[,] matrixNew2 = RotateMatrixClockwise(matrix);
 PrintMatrix(matrixNew2);
+Console.WriteLine($"columnLengt = {matrix.GetLength(0)}");
+Console.WriteLine($"rowLength = {matrix.GetLength(1)}");
+int[,] matrixNew3 = MirrorHorizontal(matrix);
+PrintMatrix(matrixNew3);
 
 
 int[,] CreateArray(int columnLength, int rowLength, int min, int max)
@@ -33,7 +37,6 @@ void PrintMatrix(int[,] matrix)
             Console.Write($"{matrix[i, j]} ");
         }
         Console.WriteLine("");
-
     }
 }
 
@@ -61,6 +64,20 @@ int[,] RotateMatrixClockwise(int[,] oldMatrix)
     {
         for (int j = 0; j < oldColumnLengt; j++)
             newMatrix[i, j] = oldMatrix[oldColumnLengt - 1 - j, i];
+    }
+    return newMatrix;
+}
+
+int[,] MirrorHorizontal(int[,] oldMatrix)
+{
+    int oldColumnLengt = oldMatrix.GetLength(0);
+    int oldRowLength = oldMatrix.GetLength(1);
+    int[,] newMatrix = new int[oldColumnLengt, oldRowLength];
+
+    for (int i = 0; i < oldColumnLengt; i++)
+    {
+        for (int j = 0; j < oldRowLength; j++)
+            newMatrix[i, j] = oldMatrix[i, oldRowLength - 1 - j];
     }
     return newMatrix;
 }
