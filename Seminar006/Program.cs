@@ -31,7 +31,7 @@ Console.WriteLine(GetBinaryNumber(readNumber, result));
 
 
 // Задача 44
-int a = ReadNumber("Введите число");
+a = ReadNumber("Введите число");
 
 
 // Задача 45:
@@ -94,7 +94,7 @@ int[] GetFibonachi(int number)
     {
         result[1] = n2;
     }
-    for (int i = 2; i <= number; i++) ;
+    for (int i = 2; i <= number; i++)
     {
         result[i] = result[i - 1] + result[i - 2];
     }

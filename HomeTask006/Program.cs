@@ -8,6 +8,8 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 // Задача 41. Решение
+using System.Text;
+
 Console.WriteLine("Введите числа через пробел или запятую");
 
 StringBuilder readNumbers = new StringBuilder(Console.ReadLine());
@@ -25,7 +27,7 @@ double k1 = ReadNumber("Введите значение k1");
 double b2 = ReadNumber("Введите значение b2");
 double k2 = ReadNumber("Введите значение k2");
 
-Console.WriteLine(GetCross(k1, k2,b1, b2));
+Console.WriteLine(GetCross(k1, k2, b1, b2));
 
 string GetCross(double k1, double k2, double b1, double b2)
 {
