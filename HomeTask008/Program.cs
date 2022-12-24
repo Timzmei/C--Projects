@@ -72,7 +72,7 @@ Print3DMatrix(matrix3D);
 
 // Задача 62. Решение
 Console.WriteLine("\n\nЗадача 62");
-int[,] matrixSpiral = Create2DSpiralMatrix(5,7,0,50);
+int[,] matrixSpiral = Create2DSpiralMatrix(4,4,0,50);
 Console.WriteLine("\nМассив заполненый по спирали:\n");
 Print2DMatrix(matrixSpiral);
 
