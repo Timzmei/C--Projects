@@ -14,6 +14,7 @@
 
 // Задача 64.
 Console.WriteLine("\n\nЗадача 64");
+Console.WriteLine("Программа, которая выведет все натуральные числа в промежутке от N до 1");
 Console.WriteLine("Введите N");
 int number = int.Parse(Console.ReadLine());
 PrintNumber(number);
@@ -32,6 +33,7 @@ void PrintNumber(int i)
 
 // Задача 66
 Console.WriteLine("\n\nЗадача 66");
+Console.WriteLine("Программа вычисления функции Аккермана");
 Console.WriteLine("Введите N");
 int n = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите M");
@@ -48,6 +50,7 @@ int Sum(int n, int m)
 
 // Задача 68
 Console.WriteLine("\n\nЗадача 68");
+Console.WriteLine("Программа, которая найдёт сумму натуральных элементов в промежутке от M до N");
 Console.WriteLine("Вычисление функции Аккермана");
 Console.WriteLine("Введите N");
 int j = int.Parse(Console.ReadLine());
