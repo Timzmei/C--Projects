@@ -169,10 +169,6 @@ int[] GetSortedRow(int[] array)
                 int temp = array[i];
                 array[i] = array[i + 1];
                 array[i + 1] = temp;
-            } else 
-            {
-                array[i] = array[i];
-                array[i + 1] = array[i + 1];
             }
         }
     }
@@ -207,7 +203,7 @@ int[,] Create2DSpiralMatrix(int columnLength, int rowLength, int min, int max)
     {
         int coner;
         Console.WriteLine($"m= {m}, n= {n}");
-        matrix[m,n] = new Random().Next(min, max);
+        matrix[m,n] = i;
         if(Math.Abs(dn) == 1)
         {
             coner = n + dn;
