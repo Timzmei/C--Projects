@@ -21,20 +21,20 @@
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 
-// Задача 47. Решение
-Console.WriteLine("Программа, которая задает двумерный массив размером mхn, заполненный случайными вещественными числами");
+// // Задача 47. Решение
+// Console.WriteLine("Программа, которая задает двумерный массив размером mхn, заполненный случайными вещественными числами");
 
-double[,] array = CreateArray(3, 4, -10, 10);
-PrintMatrix(array);
+// double[,] array = CreateArray(3, 4, -10, 10);
+// PrintMatrix(array);
 
 
-// Задача 50. Решение
-Console.WriteLine("\n\nПрограмма, которая на вход принимает позиции элемента в двумерном массиве,\n и возвращает значение этого элемента или же указание, что такого элемента нет.");
+// // Задача 50. Решение
+// Console.WriteLine("\n\nПрограмма, которая на вход принимает позиции элемента в двумерном массиве,\n и возвращает значение этого элемента или же указание, что такого элемента нет.");
 
-Console.WriteLine("Введите позиции элемента в двумерном массиве через пробел или запятую");
-StringBuilder readNumbers = new StringBuilder(Console.ReadLine());
-string[] position = readNumbers.Replace(",", " ").ToString().Split(" ",StringSplitOptions.RemoveEmptyEntries);
-Console.WriteLine(GetElementOfArray(int.Parse(position[0]), int.Parse(position[1]), array));
+// Console.WriteLine("Введите позиции элемента в двумерном массиве через пробел или запятую");
+// StringBuilder readNumbers = new StringBuilder(Console.ReadLine());
+// string[] position = readNumbers.Replace(",", " ").ToString().Split(" ",StringSplitOptions.RemoveEmptyEntries);
+// Console.WriteLine(GetElementOfArray(int.Parse(position[0]), int.Parse(position[1]), array));
 
 
 // Задача 52. Решение
@@ -57,7 +57,7 @@ double[] GetAverageOnColumn(int[,] array)
         {
             average += array[j, i];
         }
-        result[i] = (double) average/sizeColumn;
+        result[i] = (double) average/array.GetLength(0);
     }
     return result;
 }
